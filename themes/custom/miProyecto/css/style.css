@@ -1,0 +1,131 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+/*--Imagenes--*/
+
+.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+
+    max-width: 10%;
+    height: auto;
+}
+
+/* .cabecera-superior {
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}*/
+.cabecera-superior {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 15px;
+}
+
+.contenedor-descripcion {
+
+    margin-top: 30px;
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+/*--Contenido sección central--*/
+
+.content {
+    width: 950px;
+    /* padding-right: 60px;
+    padding-left: 60px; */
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.contenido-tiempo {
+    display: flex;
+    align-items: flex-start;
+}
+
+ul {
+    list-style-type: none
+}
+
+/* .contenido-temario {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+.temario-paragraph {
+    display: flex;
+    width: 100%;
+    justify-content: baseline;
+
+}
+
+/*Contenido Aside*/
+
+.aside-etiquetas {
+
+    padding: 3px;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 1em;
+
+}
+
+.aside-temario {
+    padding: 3px;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+.a-aside {
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+/*Estilo etiquetas*/
+
+.contenido-etiquetas {
+    margin: 2px;
+    /* display: block;
+    justify-content: center; */
+}
+
+.contenido-curso {
+    width: 50%;
+}
+
+.contenido-tiempo {
+    margin-top: 1.4em;
+    width: 50%;
+}
+
+/*--Contenido footer--*/
+
+footer {
+
+    align-items: center;
+}
+
+.contenido-pie {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.brand {
+    display: flex;
+    justify-content: start;
+}

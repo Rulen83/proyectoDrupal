@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_region()
+ */
+#}
+
+
+
+<footer>
+
+{# <div class="brand-footer">
+<strong>NTT DATA</strong>
+</div> #}
+<strong class="brand">NTT DATA</strong>
+<div class="contenido-pie">
+
+<ul class="menu menu--footer nav">
+    <li class="first">
+      <a href="/legal" title="Enlace a aviso legal." data-drupal-link-system-path="node/11">Aviso legal</a>
+    </li>
+    <li class="active active-trail">
+      <a href="/form/formulario-contacto" title="Formulario de contacto." class="active-trail is-active" data-drupal-link-system-path="webform/formulario_contacto">Contacto</a>
+    </li>
+    <li class="last">
+      <a href="/politica" title="Política de privacidad." data-drupal-link-system-path="node/13">Política de privacidad</a>
+    </li>
+</ul>
+</div>
+
+</footer>
+
+

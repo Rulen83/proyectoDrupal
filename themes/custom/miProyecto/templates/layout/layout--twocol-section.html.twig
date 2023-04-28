@@ -1,0 +1,58 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a two-column layout.
+ *
+ * Available variables:
+ * - in_preview: Whether the plugin is being rendered in preview mode.
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{% if content %}
+  <div{{ attributes }}>
+
+    {% if content.first %}
+      <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first') }}>
+
+        <section class="contenido-temario">
+  <h1>Fundamental Web Development Concepts.</h1>
+<time datetime="2023-04-18T12:00:00Z">Mar, 18/04/2023 - 12:00</time>	
+  <h5><strong>Descripción del tema</strong></h5>
+  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum.</div>
+<h5><strong>Contenido.</strong></h5>
+  <div class="temario-paragraph">
+  
+    <div class="contenido-curso">
+      <ul>
+        <li><a href="https://getbootstrap.com/docs/5.3/components/card/">📚Demonstrate knowledge of HTML and CSS.</a></li>
+        <li><a href="https://getbootstrap.com/docs/5.3/components/card/">📚Identify JavaScript and jQuery programing concepts.</a></li>
+        <li><a href="https://getbootstrap.com/docs/5.3/components/card/">📚Demonstrate the use of Git for version control.</a></li>
+      <ul>
+  </div>
+<div class="contenido-tiempo">
+      <ul>
+        <li content="30">⏰30 minutos.</li>
+        <li content="30">⏰30 minutos.</li>
+        <li content="30">⏰30 minutos.</li>
+      <ul>
+    </div>
+</div>
+        {# {{ content.first }}  #}
+      </div>
+    {% endif %}
+
+    {% if content.second %}
+      <div {{ region_attributes.second.addClass('layout__region', 'layout__region--second') }}>
+        {{ content.second }}
+      </div>
+    {% endif %}
+
+  </div>
+{% endif %}
